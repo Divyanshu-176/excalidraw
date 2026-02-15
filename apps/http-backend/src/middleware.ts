@@ -10,7 +10,6 @@ interface extendedReq extends Request{
 }
 
 
-
 export function middleware(req:extendedReq, res:Response, next:NextFunction){
     const token = req.headers["authorization"]
 
@@ -22,6 +21,7 @@ export function middleware(req:extendedReq, res:Response, next:NextFunction){
     const decoded = jwt.verify(token, JWT_SECRET) as JwtPayload
     if (decoded){
         req.userId = decoded.userId
+        next()
     } else {
         res.status(403).json({
             msg:"Unauthorized"
