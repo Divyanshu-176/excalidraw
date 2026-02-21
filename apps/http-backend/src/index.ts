@@ -5,11 +5,12 @@ import { middleware } from "./middleware";
 
 import {createRoomSchema, createUserSchema, signinSchema} from "@repo/common/types"
 import {prisma} from "@repo/db/client"
-
+import cors from "cors"
 
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 
 app.post("/signup", async (req,res)=>{
@@ -138,7 +139,7 @@ app.get("/chats/:roomId", async (req,res)=>{
 })
 
 
-
+//get room of slug
 app.get("/room/:slug", async (req,res)=>{
     const slug = req.params.slug
     const room = await prisma.room.findFirst({

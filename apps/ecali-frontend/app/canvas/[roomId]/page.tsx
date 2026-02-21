@@ -1,8 +1,7 @@
-"use client"
+
 
 import { RoomCanvas } from "@/components/RoomCanvas"
-import { initDraw } from "@/draw"
-import { useEffect, useRef } from "react"
+ 
 
 
 

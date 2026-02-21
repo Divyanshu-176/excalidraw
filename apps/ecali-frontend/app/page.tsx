@@ -22,7 +22,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <div className="flex flex-col items-center justify-center px-6 py-20 text-center md:py-32">
         <h1 className="mb-6 max-w-2xl text-5xl font-bold text-zinc-900 dark:text-white md:text-6xl">
           Draw, Create, and Share
@@ -31,7 +30,6 @@ export default function Home() {
           A minimal, open-source drawing application for sketches, diagrams, and collaborative whiteboarding.
         </p>
         
-        {/* CTA Buttons */}
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
           <Link href="/signup">
             <button className="cursor-pointer rounded-lg bg-zinc-900 px-8 py-3 font-semibold text-white transition-all hover:scale-105 hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200">
@@ -43,7 +41,7 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Features */}
+      
         <div className="mt-20 grid w-full max-w-3xl gap-8 md:grid-cols-3">
           <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-zinc-900">
             <div className="mb-3 text-2xl">✏️</div>

@@ -14,7 +14,7 @@ export function AuthPage({isSignin}:{isSignin:boolean}){
 
 
 
-        <div className="w-[50%] flex justify-center items-center">
+        <div className="w-[50%] h-screen bg-black flex justify-center items-center">
             
             <div className="p-2 m-2  w-fit text-white flex flex-col gap-5 ">
                 <div className="p-3 rounded-lg border-white border outline-none">
